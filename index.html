@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레스토랑 오늘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400&family=Montaga&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body { font-family: 'Montserrat', 'Noto Sans KR'; font-size: 16px; line-height: 1.7; color: rgb(34,34,34); font-weight: 200; letter-spacing: -0.025;}
+        a { text-decoration: none;}
+
+        /* -header- */
+        .gnb_wrap{width: 100%; height: 130px ; display: flex; justify-content: space-between; align-items: center; background-color: rgb(255,255,255); padding: 0 2.5%;}
+        .gnb_logo img{ width: 170px;}
+        .gnb_menu { width: 100%; height: 130px ; padding: 0 170px; text-align: center;}
+        .gnb_menu_a{ padding: 48px 43px; line-height: 130px;font-size: 22px; font-weight: 400; letter-spacing: -0.55px; color: rgb(34,34,34);}
+        /*메뉴 a크기 먼저 적용 후 gnb_wrap에 flex 적용하면 각 박스 크기 정하기 편함*/
+        .gnb_menu_a:hover { color: #c27a34;;}
+        .gnb_hiddenmenu { width: 170px; text-align: right;}
+
+        /* -main- */
+        .main_wrap { display: flex; align-items: center; max-width: 1700px; margin: 180px 78.5px 0 78.5px;}
+        .main_info { width: 50%; padding: 75px 10px 75px 9.7%; }
+        .main_tit { padding: 0 0 50px;}
+        .main_tit p { line-height: 1.2; letter-spacing: 4.8px; font-weight: 400; color: #c27a34;}
+        .main_tit h2 { font-size: 60px; font-family: 'Montaga'; line-height: 60px; font-weight: 400; letter-spacing: -1.5px;}
+        .main_info_ko { font-size: 18px; line-height: 1.7;}
+        .main_info_eng { margin: 20px 0 0; font-weight: 200;}
+        .main_val {width: 50%; height: 500px; position: relative; overflow: hidden; }
+        .main_val img { position: absolute; top: -50%; }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <!-- 데스크탑 화면 GNB -->
+        <div class="gnb_wrap">
+
+            <!-- gnb 로고 부분 -->
+            <h1 class="gnb_logo"><a href="https://www.restaurantoneul.com/"><img src="img/logo.png" alt="레스토랑 로고"></a></h1>
+
+            <!-- gnb 메뉴 부분 -->
+            <div class="gnb_menu">
+                <a href="#" class="gnb_menu_a">o’neul</a>
+                <a href="#" class="gnb_menu_a">Menu</a>
+                <a href="#" class="gnb_menu_a">People</a>
+                <a href="#" class="gnb_menu_a">Room</a>
+                <a href="#" class="gnb_menu_a">Social</a>
+                <a href="#" class="gnb_menu_a">Reservation</a>
+            </div>
+
+            <!-- gnb 히든 메뉴 부분 -->
+            <div class="gnb_hiddenmenu"><img src="img/icon_menu.png" class="gnb_hiddenmenu_btn" alt="히든 메뉴 버튼"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_wrap">
+            <div class="main_info">
+                <div class="main_tit">
+                    <p>Restaurant o’neul</p>
+                    <h2>o’neul Value</h2>
+                </div>
+                <p class="main_info_ko">
+                    레스토랑 오늘에서 선보이는 우리 음식은<br>
+                    한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
+                    우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
+                    레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
+                </p>
+                <p class="main_info_eng">
+                    o’neul’s dishes are inspired by Korean traditions and techniques.<br>
+                    Here we offer our unique understanding of authentic Korean cuisine,<br>
+                    introducing its true values through each menu.
+                </p>
+            </div>
+            <div class="main_val">
+                <img src="img/mi_img01.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>사이트 주소, 연락처</footer>
+    
+</body>
+</html>
+            
