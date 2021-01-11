@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        
+        body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.5; color: rgb(17,17,19);-webkit-font-smoothing: antialiased}
+        /* -webkit- 웹표준이 되지 않았다는 표시 */
+        .gnb_wrap{ width: 100%; height: 44px; background-color: rgba(0,0,0,0.8);}
+        .gnb_menu { width: 1000px; height: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 22px; margin: 0 98.5px;}
+        /* 부모의 너비나 높이가 정해지면 자식의 너비와 높이는 %로 처리해서 유동적으로 변경될 수 있도록 함 */
+        a { padding: 0 10px; font-weight: lighter; line-height: 44px; text-decoration: none; color: rgb(245,245,247); }
+        a:hover { color: rgb(255,255,255); font-weight: 600;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="gnb_wrap">
+            <div class="gnb_menu">
+                <a href="#" class="gnb_menu_a">Apple</a>
+                <a href="#" class="gnb_menu_a">Mac</a>
+                <a href="#" class="gnb_menu_a">iPad</a>
+                <a href="#" class="gnb_menu_a">iPhone</a>
+                <a href="#" class="gnb_menu_a">Watch</a>
+                <a href="#" class="gnb_menu_a">Music</a>
+                <a href="#" class="gnb_menu_a">고객지원</a>
+                <a href="#" class="gnb_menu_a">Search</a>
+                <a href="#" class="gnb_menu_a">Buy</a>
+            </div>
+        </div> 
+   </header> 
+</body>
+</html>
