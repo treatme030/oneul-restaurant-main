@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레스토랑 오늘</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400&family=Montaga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@200;300;400&family=Montaga&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box;}
-        body { font-family: 'Montserrat', 'Noto Sans KR'; font-size: 16px; line-height: 1.7; color: rgb(34,34,34); font-weight: 200; letter-spacing: -0.025;}
+        body { font-family: 'Montserrat', 'Noto Sans KR'; font-size: 16px; line-height: 1.5; color: rgb(34,34,34); font-weight: 200; letter-spacing: -0.45;}
         a { text-decoration: none;}
+        a:hover { color:rgb(194,122,52);}
+        div { background-position: center center; background-repeat: no-repeat; background-size: cover;}
+        h1 { font-family: 'Montaga'; font-size: 96px; font-weight: 400; line-height: 1; letter-spacing: -1.92; }
+        h3 {  font-family:'Noto Sans KR'; font-size: 22px; font-weight: 200; }
+        h4 { font-family: 'Montaga'; font-size: 22px; font-weight: 400; }
+        p { font-size: 18px; font-weight: 100; }
 
         /* -header- */
-        .gnb_wrap{width: 100%; height: 130px ; display: flex; justify-content: space-between; align-items: center; background-color: rgb(255,255,255); padding: 0 2.5%;}
+        .gnb_wrap{position: fixed; z-index: 10000; width: 100%; height: 130px ; display: flex; justify-content: space-between; align-items: center; background-color: rgb(255,255,255,0.8); padding: 0 2.5%;}
         .gnb_logo img{ width: 170px;}
-        .gnb_menu { width: 100%; height: 130px ; padding: 0 170px; text-align: center;}
+        .gnb_menu { width: 100%; height: 100%; padding: 0 170px; text-align: center;}
         .gnb_menu_a{ padding: 48px 43px; line-height: 130px;font-size: 22px; font-weight: 400; letter-spacing: -0.55px; color: rgb(34,34,34);}
         /*메뉴 a크기 먼저 적용 후 gnb_wrap에 flex 적용하면 각 박스 크기 정하기 편함*/
         .gnb_menu_a:hover { color: #c27a34;;}
         .gnb_hiddenmenu { width: 170px; text-align: right;}
 
-        /* -main- */
-        .main_wrap { display: flex; align-items: center; max-width: 1700px; margin: 180px 78.5px 0 78.5px;}
-        .main_info { width: 50%; padding: 75px 10px 75px 9.7%; }
-        .main_tit { padding: 0 0 50px;}
-        .main_tit p { line-height: 1.2; letter-spacing: 4.8px; font-weight: 400; color: #c27a34;}
-        .main_tit h2 { font-size: 60px; font-family: 'Montaga'; line-height: 60px; font-weight: 400; letter-spacing: -1.5px;}
-        .main_info_ko { font-size: 18px; line-height: 1.7;}
-        .main_info_eng { margin: 20px 0 0; font-weight: 200;}
-        .main_val {width: 50%; height: 500px; position: relative; overflow: hidden; }
-        .main_val img { position: absolute; top: -50%; }
-
+        /* -hero- */
+        .hero_wrap { position: relative; width: 100%; height: 960px; display: flex; justify-content: center; align-items: center; background-image: url(img/visual01.jpg);}
+        .hero_title { text-align: center; color: white;}
+        .hero_reservation { position: absolute; width: 230px; height: 70px; display: flex; justify-content: center; align-items: center; top: 170px; right: 80px; border: 1px solid white; color: white;}
+        .margin_b_20 { margin: 0 0 20px;}
+        .margin_b_10 { margin: 0 0 10px;}
+        .hero_reservation_img { }
+        .hero_reservation_a { margin: 0 0 0 17px; color: white;}
 
     </style>
 </head>
@@ -58,6 +61,24 @@
     </header>
 
     <main>
+        <!-- hero -->
+        <div class="hero_wrap">
+            <!-- hero title -->
+            <div class="hero_title">
+                <h1 class="margin_b_20">Restaurant o'neul</h1>
+                <h3 class="margin_b_10">가장 풍요롭고 생생한 시간, 오늘을 주제로 한 전통 한식 다이닝</h3>
+                <p>Restaurant o'neul is a Korean dining inspired by the most fulfilling and vivid time, 'today'.</p>
+            </div>
+            <!-- hero reservation -->
+            <div class="hero_reservation">
+                <img src="img/icon_reservation.png"alt="예약달력" class="hero_reservation_img">
+                <a href="#" class="hero_reservation_a"><h4>Reservation</h4></a>
+            </div>
+        </div>
+
+
+
+
         <div class="main_wrap">
             <div class="main_info">
                 <div class="main_tit">
