@@ -7,21 +7,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@200;300;400&family=Montaga&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box;}
-        body { font-family: 'Montserrat', 'Noto Sans KR'; font-size: 16px; line-height: 1.5; color: rgb(34,34,34); font-weight: 200; letter-spacing: -0.45;}
+        body { font-family: 'Montserrat', 'Noto Sans KR'; font-size: 16px; line-height: 1.5; color: rgb(34,34,34); font-weight: 200; letter-spacing: -0.45px;}
         a { text-decoration: none;}
         a:hover { color:rgb(194,122,52);}
         div { background-position: center center; background-repeat: no-repeat; background-size: cover;}
-        h1 { font-family: 'Montaga'; font-size: 96px; font-weight: 400; line-height: 1; letter-spacing: -1.92; }
+        h1 { font-family: 'Montaga'; font-size: 96px; font-weight: 400; line-height: 1; letter-spacing: -1.92px; }
+        h2 { font-family: 'Montaga', serif; font-size: 60px; font-weight: 400;  line-height: 1;  letter-spacing: -1.5px;}
         h3 {  font-family:'Noto Sans KR'; font-size: 22px; font-weight: 200; }
         h4 { font-family: 'Montaga'; font-size: 22px; font-weight: 400; }
+        h5 { font-family:  'Montserrat'; letter-spacing: 4.8px; line-height: 1.2; color: rgb(194, 122, 52); font-weight: 400;}
         p { font-size: 18px; font-weight: 100; }
+
+        .margin_b_50 { margin: 0 0 50px;}
+        .margin_b_20 { margin: 0 0 20px;}
+        .margin_b_10 { margin: 0 0 10px;}
+
+        .fs_16 { font-size: 16px;}
+        .fs_20 { font-size: 20px;}
+        .fs_22 { font-size: 22px;}
 
         /* -header- */
         .gnb_wrap{position: fixed; z-index: 10000; width: 100%; height: 130px ; display: flex; justify-content: space-between; align-items: center; background-color: rgb(255,255,255,0.8); padding: 0 2.5%;}
         .gnb_logo img{ width: 170px;}
         .gnb_menu { width: 100%; height: 100%; padding: 0 170px; text-align: center;}
-        .gnb_menu_a{ padding: 48px 43px; line-height: 130px;font-size: 22px; font-weight: 400; letter-spacing: -0.55px; color: rgb(34,34,34);}
-        /*메뉴 a크기 먼저 적용 후 gnb_wrap에 flex 적용하면 각 박스 크기 정하기 편함*/
+        .gnb_menu_a{ padding: 48px 43px;;font-size: 22px; line-height: 130px; font-weight: 400; letter-spacing: -0.55px; color: rgb(34,34,34);}
+        /*메뉴 a크기 먼저 적용 후 gnb_wrap에 flex 적용하면 각 박스 크기 정하기 편함 */
         .gnb_menu_a:hover { color: #c27a34;;}
         .gnb_hiddenmenu { width: 170px; text-align: right;}
 
@@ -29,10 +39,14 @@
         .hero_wrap { position: relative; width: 100%; height: 960px; display: flex; justify-content: center; align-items: center; background-image: url(img/visual01.jpg);}
         .hero_title { text-align: center; color: white;}
         .hero_reservation { position: absolute; width: 230px; height: 70px; display: flex; justify-content: center; align-items: center; top: 170px; right: 80px; border: 1px solid white; color: white;}
-        .margin_b_20 { margin: 0 0 20px;}
-        .margin_b_10 { margin: 0 0 10px;}
+        
         .hero_reservation_img { }
         .hero_reservation_a { margin: 0 0 0 17px; color: white;}
+
+        /* -main info- */
+        .main_info_wrap { width: 1700px; height: 680px; margin: 0 auto; padding: 180px 0 0 0; display: flex;justify-content: center; align-items: flex-end;}
+        .main_info { width: 50%; height: 500px; padding: 100px 0 0 10%;}
+        .main_info_img { width: 50%; height: 500px; background-image: url(img/mi_img01.jpg);}
 
     </style>
 </head>
@@ -78,32 +92,31 @@
 
 
 
-
-        <div class="main_wrap">
+        <!-- main info -->
+        <div class="main_info_wrap">
             <div class="main_info">
-                <div class="main_tit">
-                    <p>Restaurant o’neul</p>
-                    <h2>o’neul Value</h2>
+                <div class="main_info_text">
+                    <h5>Restaurant o’neul</h5>
+                    <h2 class="margin_b_50">o’neul Value</h2>
+                    <p class="margin_b_20">
+                        레스토랑 오늘에서 선보이는 우리 음식은<br>
+                        한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
+                        우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
+                        레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
+                    </p>
+                    <p class="fs_16">
+                        o’neul’s dishes are inspired by Korean traditions and techniques.<br>
+                        Here we offer our unique understanding of authentic Korean cuisine,<br>
+                        introducing its true values through each menu.
+                    </p>
                 </div>
-                <p class="main_info_ko">
-                    레스토랑 오늘에서 선보이는 우리 음식은<br>
-                    한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
-                    우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
-                    레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
-                </p>
-                <p class="main_info_eng">
-                    o’neul’s dishes are inspired by Korean traditions and techniques.<br>
-                    Here we offer our unique understanding of authentic Korean cuisine,<br>
-                    introducing its true values through each menu.
-                </p>
             </div>
-            <div class="main_val">
-                <img src="img/mi_img01.jpg" alt="">
-            </div>
+            <div class="main_info_img"></div>
         </div>
     </main>
     <footer>사이트 주소, 연락처</footer>
     
 </body>
 </html>
+                    
             

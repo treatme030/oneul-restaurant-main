@@ -26,7 +26,7 @@
 
       p { font-family:  'Montserrat', 'Noto Sans KR', sans-serif; font-size: 18px;font-weight: 100; letter-spacing: normal;}
 
-      div { background-position: center; background-size: cover; background-repeat: no-repeat;}
+      div { background-size: cover; background-position: center center; background-repeat: no-repeat;}
 
       /* header */
       .gnb_wrap { position: fixed; width:100%; height:130px; background-color:rgb(255,255,255,0.8); display: flex; justify-content: space-between; padding:0 2.5%; align-items: center; z-index: 10000;}
@@ -38,7 +38,7 @@
       .gnb_hiddenmenu {width: 127.5px; text-align: right;}
 
       /* hero */
-      .hero_wrap { position: relative; width: 100%; height: 100vh; background-image: url(img/visual01.jpg); display: flex; justify-content: center; align-items: center;}
+      .hero_wrap { position: relative; width: 100%; height: 960px; background-image: url(img/visual01.jpg); display: flex; justify-content: center; align-items: center;}
       .hero_title { text-align: center;  color: white; }
 
       .margin_b_50 { margin: 0 0 50px;}
@@ -55,8 +55,8 @@
       .hero_reservation_a { color: white;}
 
       /* main_info */
-      .main_info_wrap {width: 100%; height: 680px; padding: 180px 0 0 0; display: flex; justify-content: center; }
-      .main_info { width: 1700px; height: 500px; display: flex;}
+      .main_info_wrap {width: 100%; height: 680px; padding: 180px 0 0 0; display: flex; justify-content: center; } /*flex로 .main_info 중앙위치 또는 margin: 0 auto;*/
+      .main_info { width: 1700px; height: 500px; display: flex;}/*text와 img 가로 정렬*/
       .main_info_text { width: 50%; height: 100%; padding: 100px 0 0 10%;}
       .main_info_img { width: 50%; height: 500px; background-image: url(img/mi_img01.jpg);}
       
@@ -113,11 +113,10 @@
    <!--main_info -->
     <div class="main_info_wrap">
          <div class="main_info">
-            
                <div class="main_info_text">
                   <h5>Restaurant o’neul</h5>
                   <h2 class="margin_b_50">o’neul Value</h2>
-                  <p>레스토랑 오늘에서 선보이는 우리 음식은<br>
+                  <p class="margin_b_20">레스토랑 오늘에서 선보이는 우리 음식은<br>
                      한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
                      우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
                      레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
@@ -127,12 +126,13 @@
                      introducing its true values through each menu.
                   </p>
                </div>
-            
-         </div>
          <div class="main_info_img"></div>
       </div>
- </main>
+   </div>
+</main>
 
-   <footer>사이트 주소, 연락처</footer>
+<footer>사이트 주소, 연락처</footer>
 </body>
-</html>
+              
+</html>   
+      
