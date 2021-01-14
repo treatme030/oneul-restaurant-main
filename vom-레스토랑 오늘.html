@@ -4,66 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>레스토랑 오늘</title>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Noto+Sans+KR:wght@300;400&family=Montaga&display=swap" rel="stylesheet">
-   <style>
-
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-
-      body { font-family:'Montserrat','Noto Sans KR'; font-size: 16px; line-height: 1.5; color:rgb(34,34,34); font-weight: 200; letter-spacing: -0.45px;} 
-
-      a { text-decoration: none;}
-      a:hover { color:rgb(194,122,52);}
-
-      h1 { font-family: 'Montaga'; font-size: 96px; font-weight: 400;  line-height: 1;  letter-spacing: -1.92px; }
-
-      h2 { font-family: 'Montaga', serif; font-size: 60px; font-weight: 400;  line-height: 1;  letter-spacing: -1.5px;}
-
-      h3 { font-family: 'Montserrat', 'Noto Sans KR', sans-serif; font-size: 22px; font-weight: 200; }
-
-      h4 { font-family: 'Montaga'; font-size: 22px; font-weight: 400;}
-
-      h5 { font-family:  'Montserrat'; font-size: 16px; letter-spacing: 4.8px; line-height: 1.2; color: rgb(194, 122, 52); font-weight: 400;}
-
-      p { font-family:  'Montserrat', 'Noto Sans KR', sans-serif; font-size: 18px;font-weight: 100; letter-spacing: normal;}
-
-      div { background-size: cover; background-position: center center; background-repeat: no-repeat;}
-
-      /* header */
-      .gnb_wrap { position: fixed; width:100%; height:130px; background-color:rgb(255,255,255,0.8); display: flex; justify-content: space-between; padding:0 2.5%; align-items: center; z-index: 10000;}
-      /*  가장 위에 떠 있도록 하여 항상 보이게 하기 위해서는 z-index 값을 설정해 줌  */
-      
-      .gnb_menu_a { padding: 0 43px; height: 100%; font-family: 'Montserrat'; font-size: 22px; letter-spacing: -0.55px; color:black; line-height: 22px; font-weight: 400;}
-      
-      .gnb_logo_img { width: 127.5px;}
-      .gnb_hiddenmenu {width: 127.5px; text-align: right;}
-
-      /* hero */
-      .hero_wrap { position: relative; width: 100%; height: 960px; background-image: url(img/visual01.jpg); display: flex; justify-content: center; align-items: center;}
-      .hero_title { text-align: center;  color: white; }
-
-      .margin_b_50 { margin: 0 0 50px;}
-      .margin_b_20 { margin: 0 0 20px;}
-      .margin_b_10 { margin: 0 0 10px;}
-
-      .fs_16 { font-size: 16px;}
-      .fs_20 {font-size: 20px;}
-      .fs_22 {font-size: 22px;}
-     
-
-      .hero_reservation { position: absolute; top: 170px; right: 80px; width: 230px; height: 70px; display: flex; justify-content: center; align-items: center;  border: 1px solid white;}
-      .hero_reservation_img {  width: 25px; margin: 0 20px 0 0;}
-      .hero_reservation_a { color: white;}
-
-      /* main_info */
-      .main_info_wrap {width: 100%; height: 680px; padding: 180px 0 0 0; display: flex; justify-content: center; } /*flex로 .main_info 중앙위치 또는 margin: 0 auto;*/
-      .main_info { width: 1700px; height: 500px; display: flex;}/*text와 img 가로 정렬*/
-      .main_info_text { width: 50%; height: 100%; padding: 100px 0 0 10%;}
-      .main_info_img { width: 50%; height: 500px; background-image: url(img/mi_img01.jpg);}
-      
-
-
-   </style>
-
+   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
    <header>
@@ -91,48 +32,165 @@
             <img src="img/icon_menu.png" class="gnb_hiddenmenu_btn" alt="히든 메뉴 버튼">
          </div>
       </div>
- </header>
+   </header>
 
- <main>
+   <main>
 
-   <!-- Hero -->
-    <div class="hero_wrap">
-       <!-- hero title -->
-       <div class="hero_title">
-         <h1 class="margin_b_20">Restaurant o'neul</h1>
-         <h3 class="margin_b_10">가장 풍요롭고 생생한 시간, 오늘을 주제로 한 전통 한식 다이닝</h3>
-         <p>Restaurant o'neul is a Korean dining inspired by the most fulfilling and vivid time, 'today'.</p>
+      <!-- Hero -->
+      <div class="hero_wrap">
+
+         <!-- hero title -->
+         <div class="hero_title">
+            <h1 class="margin_b_20">Restaurant o'neul</h1>
+            <h3 class="margin_b_10">가장 풍요롭고 생생한 시간, 오늘을 주제로 한 전통 한식 다이닝</h3>
+            <p class="fs_18">Restaurant o'neul is a Korean dining inspired by the most fulfilling and vivid time, 'today'.</p>
+         </div>
+
+         <!-- hero reservation -->
+         <div class="hero_reservation">
+            <img src="img/calendar-alt-regular.svg" alt="" class="hero_reservation_img">
+            <h4><a href="#" class="hero_reservation_a">Reservation</a></h4>
+         </div>
       </div>
-      <!-- hero reservation -->
-      <div class="hero_reservation">
-         <img src="img/calendar-alt-regular.svg" alt="" class="hero_reservation_img">
-         <a href="#" class="hero_reservation_a"><h4>Reservation</h4></a>
-      </div>
-   </div>
 
-   <!--main_info -->
-    <div class="main_info_wrap">
-         <div class="main_info">
-               <div class="main_info_text">
-                  <h5>Restaurant o’neul</h5>
-                  <h2 class="margin_b_50">o’neul Value</h2>
-                  <p class="margin_b_20">레스토랑 오늘에서 선보이는 우리 음식은<br>
-                     한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
-                     우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
-                     레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
-                  </p>
-                  <p class="fs_16">o’neul’s dishes are inspired by Korean traditions and techniques.<br>
-                     Here we offer our unique understanding of authentic Korean cuisine<br>
-                     introducing its true values through each menu.
-                  </p>
-               </div>
-         <div class="main_info_img"></div>
+      <!--main info -->
+      <div class="main_info_wrap">
+            <div class="main_info">
+                  <div class="main_info_text">
+                     <h5>Restaurant o’neul</h5>
+                     <h2 class="margin_b_50">o’neul Value</h2>
+                     <p class="fs_18 margin_b_20">레스토랑 오늘에서 선보이는 우리 음식은<br>
+                        한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
+                        우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
+                        레스토랑 오늘만의 스타일로 재해석 한 메뉴를 제공합니다.
+                     </p>
+                     <p>o’neul’s dishes are inspired by Korean traditions and techniques.<br>
+                        Here we offer our unique understanding of authentic Korean cuisine<br>
+                        introducing its true values through each menu.
+                     </p>
+                  </div>
+                  <div class="main_info_img"></div>
+            </div>
       </div>
-   </div>
-</main>
 
-<footer>사이트 주소, 연락처</footer>
-</body>
+      <!-- main menu -->
+         <div class="main_menu_wrap">
+            <div class="main_menu">
+               <h5 class="text_center c_point">Restaurant o’neul</h5>
+               <h2 class="text_center margin_b_50">o’neul Menu</h2>
+               <ul class="main_menu_ul">
+                  <li class="main_menu_li">
+                     <div class="main_menu_li_title" >
+                        <span>Luncheon</span>
+                        <span>+</span>
+                     </div>
+                     <div class="main_menu_li_menu">
+                        <div>
+                           <p class="fs_20 fw_400">오늘 오찬(제주)</p>
+                           <p>55,000 KRW</p>
+                        </div>
+                        <div>
+                           <p class="fs_20 fw_400">겨울 오찬(제주)</p>
+                           <p>68,000 KRW</p>
+                        </div>
+                     </div>
+                  </li>
+                  <li  class="main_menu_li">
+                     <div class="main_menu_li_title">
+                        <span>Dinner</span>
+                        <span>+</span>
+                     </div>
+                     <div class="main_menu_li_menu">
+                        <div>
+                           <p class="fs_20 fw_400">제주 겨울 한상</p>
+                           <p>150,000 KRW</p>
+                        </div>
+                        <div >
+                           <p class="fs_20 fw_400">오늘 겨울 한상</p>
+                           <p>150,000 KRW</p>
+                        </div>
+                     </div>
+                  </li>
+                  <li  class="main_menu_li">
+                     <div class="main_menu_li_title">
+                        <span>Banquet / Party</span>
+                        <span>+</span>
+                     </div>
+                     <div class="width_60p">
+                        <div lass="main_menu_li_menu_1 width_60p">
+                           <p class="fs_20 fw_400">맞춤 메뉴(Uopn request)</p>
+                           <p>100,000 KRW ~</p>
+                        </div>
+                     
+                     </div>
+                  </li>
+                  <li  class="main_menu_li">
+                     <div class="main_menu_li_title">
+                        <span>Signature whine/Liquor</span>
+                        <span>+</span>
+                     </div>
+                     <div class="main_menu_li_menu">
+                        <div lass="width_40p">
+                           <p class="fs_20 fw_400">Champaign/<br>
+                              White/Red</p>
+                           <p>95,000 KRW ~</p>
+                        </div>
+                        <div lass="width_60p">
+                           <p class="fs_20 fw_400">Korean Traditional<br> 
+                              Liquor Pairing</p>
+                           <p>70,000 KRW ~</p>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- main room -->
+         <div class="main_room_wrap">
+            <ul class="main_room">   
+               <li>
+                  <div>
+                     <p class="fs_22 fw_200 ">1F</p>
+                     <h4 class="fs_26 fw_400">Receprion</h4>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <p class="fs_22 fw_200 ">2F</p>
+                     <h4 class="fs_26 fw_400">Private Dining Room</h4>
+                  </div>
+               </li>
+               <li>
+                  <div>
+                     <p class="fs_22 fw_200 ">3F</p>
+                     <h2 class="fs_50 margin_b_20">Hall</h2>
+                     <p class="fs_20 fw_200">레스토랑 오늘 3층은 야외 중정을 사이에 두고<br>
+                     2가지 스타일의 다이닝 홀이 있습니다.</p>
+                  </div>
+               </li>
+               <li >
+                  <div>
+                     <p class="fs_22 fw_200 ">banquet/Party</p>
+                     <h4 class="fs_26 fw_400">Dining events</h4>
+                  </div>
+               </li>
+            </ul>
+         </div>
+
+        
+      </main>
+   
+   <footer>사이트 주소, 연락처</footer>
+   </body>
+   </html>     
               
-</html>   
+            
+            
+               
+          
+               
+          
+
+            
       

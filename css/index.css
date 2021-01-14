@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Noto Sans KR";
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(34, 34, 34);
+  font-weight: 200;
+  letter-spacing: -0.45px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(194, 122, 52);
+}
+
+h1 {
+  font-family: "Montaga", serif;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.92px;
+}
+
+h2 {
+  font-family: "Montaga", serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+h4 {
+  font-family: "Montaga";
+  font-size: 22px;
+  font-weight: 100;
+}
+
+h5 {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  letter-spacing: 4.8px;
+  line-height: 1.2;
+  color: rgb(194, 122, 52);
+  font-weight: 400;
+}
+
+p {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  letter-spacing: normal;
+  font-weight: 100;
+}
+
+div,
+ul,
+ol,
+dl {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+}
+/* Header */
+
+.gnb_wrap {
+  position: fixed;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5%;
+  align-items: center;
+  z-index: 10000;
+}
+/*  가장 위에 떠 있도록 하여 항상 보이게 하기 위해서는 z-index 값을 설정해 줌  */
+
+.gnb_menu_a {
+  padding: 0 43px;
+  height: 100%;
+  font-family: "Montserrat";
+  font-size: 22px;
+  letter-spacing: -0.55px;
+  color: black;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.gnb_logo_img {
+  width: 127.5px;
+}
+.gnb_hiddenmenu {
+  width: 127.5px;
+  text-align: right;
+}
+
+/* Hero */
+
+.hero_wrap {
+  position: relative;
+  width: 100%;
+  height: 960px;
+  background-image: url(../img/visual01.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_title {
+  text-align: center;
+  color: white;
+}
+
+.margin_b_10 {
+  margin: 0 0 10px;
+}
+.margin_b_20 {
+  margin: 0 0 20px;
+}
+.margin_b_50 {
+  margin: 0 0 50px;
+}
+
+.fs_16 {
+  font-size: 16px;
+}
+.fs_18 {
+  font-size: 18px;
+}
+.fs_20 {
+  font-size: 20px;
+}
+.fs_22 {
+  font-size: 22px;
+}
+.fs_26 {
+  font-size: 26px;
+}
+.fs_50 {
+  font-size: 50px;
+}
+.fw_200 {
+  font-weight: 200;
+}
+.fw_400 {
+  font-weight: 400;
+}
+
+.c_point {
+  color: rgb(194, 122, 52);
+}
+
+.text_center {
+  text-align: center;
+}
+
+.hero_reservation {
+  position: absolute;
+  top: 180px;
+  right: 150px;
+  width: 230px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.hero_reservation_img {
+  width: 24px;
+  margin: 0 20px 0 0;
+}
+.hero_reservation_a {
+  color: white;
+}
+
+/* Main Info */
+
+.main_info_wrap {
+  width: 100%;
+  height: 680px;
+  padding: 180px 0 0 0;
+  display: flex;
+  justify-content: center;
+} /*flex로 .main_info 중앙위치 또는 margin: 0 auto;*/
+.main_info {
+  width: 1700px;
+  height: 500px;
+  display: flex;
+} /*text와 img 가로 정렬*/
+.main_info_text {
+  width: 50%;
+  height: 100%;
+  padding: 100px 0 0 10%;
+}
+.main_info_img {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/mi_img01.jpg);
+}
+
+/* Main menu */
+
+.main_menu_wrap {
+  width: 100%;
+  height: auto;
+  padding: 180px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.main_menu {
+  width: 1720px;
+  height: auto;
+}
+.main_menu_ul {
+  width: 100%;
+  display: flex;
+}
+.main_menu_li {
+  width: 410px;
+  height: 500px;
+  margin: 0 10px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Selector use: nth-child */
+.main_menu_ul li:nth-child(1) {
+  margin: 68px 10px 30px;
+  background-image: url(../img/mn_img01.jpg);
+}
+.main_menu_ul li:nth-child(2) {
+  background-image: url(../img/mn_img02.jpg);
+}
+.main_menu_ul li:nth-child(3) {
+  margin: 68px 10px 30px;
+  background-image: url(../img/mn_img03.jpg);
+}
+.main_menu_ul li:nth-child(4) {
+  background-image: url(../img/mn_img04.jpg);
+}
+.main_menu_li_title {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  padding: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.main_menu_li_menu {
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  padding: 20px 0 0;
+  display: flex;
+}
+
+.main_menu_li_menu div {
+  width: 50%;
+}
+.main_menu_li_menu div:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 0 0 30px;
+}
+/* 투명도를 조절해서 선이 얇게 보이게 할 수 있다 */
+.main_menu_li_title span {
+  font-family: "Montaga";
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.65px;
+  line-height: 39px;
+}
+.main_menu_li_title span:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  color: rgb(150, 150, 150);
+  font-size: 26px;
+  line-height: 25px;
+  padding: 0 0 5px 0;
+}
+
+.width_40p {
+  width: 40%;
+}
+.width_60p {
+  width: 60%;
+}
+
+/* -Main Room- */
+
+.main_room_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 180px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.main_room {
+  width: 1720px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.main_room li {
+  height: 620px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.main_room li:nth-child(1) {
+  width: 15.5%;
+  background-image: url(../img/mh_img01_bg.jpg);
+}
+.main_room li:nth-child(2) {
+  width: 15.5%;
+  background-image: url(../img/mh_img02_bg.jpg);
+}
+.main_room li:nth-child(3) {
+  width: 51%;
+  background-image: url(../img/mh_img03.jpg);
+}
+.main_room li:nth-child(4) {
+  width: 15.5%;
+  background-image: url(../img/mh_img04_bg.jpg);
+}
+
+/* -Main Insta- */
