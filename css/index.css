@@ -1,3 +1,6 @@
+:root {
+  font-size: 10px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,6 @@
 
 body {
   font-family: "Montserrat", "Noto Sans KR";
-  font-size: 16px;
   line-height: 1.5;
   color: rgb(34, 34, 34);
   font-weight: 200;
@@ -22,7 +24,7 @@ a:hover {
 
 h1 {
   font-family: "Montaga", serif;
-  font-size: 96px;
+  font-size: 9.6rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -1.92px;
@@ -30,7 +32,7 @@ h1 {
 
 h2 {
   font-family: "Montaga", serif;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -1.5px;
@@ -38,19 +40,19 @@ h2 {
 
 h3 {
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 2.2rem;
+  font-weight: 200;
 }
 
 h4 {
   font-family: "Montaga";
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 100;
 }
 
 h5 {
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 4.8px;
   line-height: 1.2;
   color: rgb(194, 122, 52);
@@ -60,7 +62,8 @@ h5 {
 p {
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
   letter-spacing: normal;
-  font-weight: 100;
+  font-weight: 200;
+  font-size: 1.6rem;
 }
 
 div,
@@ -96,10 +99,10 @@ dl {
   padding: 0 43px;
   height: 100%;
   font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 2.2rem;
   letter-spacing: -0.55px;
   color: black;
-  line-height: 22px;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -138,22 +141,22 @@ dl {
 }
 
 .fs_16 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .fs_18 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .fs_20 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .fs_22 {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 .fs_26 {
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 .fs_50 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 .fw_200 {
   font-weight: 200;
@@ -269,10 +272,11 @@ dl {
   padding: 20px 0 0;
   display: flex;
 }
-
-.main_menu_li_menu div {
+.main_menu_li_menu_1,
+.main_menu_li_menu_2 {
   width: 50%;
 }
+
 .main_menu_li_menu div:nth-child(2) {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0 0 0 30px;
@@ -280,7 +284,7 @@ dl {
 /* 투명도를 조절해서 선이 얇게 보이게 할 수 있다 */
 .main_menu_li_title span {
   font-family: "Montaga";
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: -0.65px;
   line-height: 39px;
@@ -293,7 +297,7 @@ dl {
   display: flex;
   justify-content: center;
   color: rgb(150, 150, 150);
-  font-size: 26px;
+  font-size: 2.6rem;
   line-height: 25px;
   padding: 0 0 5px 0;
 }
@@ -309,42 +313,123 @@ dl {
 
 .main_room_wrap {
   width: 100%;
-  height: 100%;
-  padding: 180px 0 0 0;
-  display: flex;
-  justify-content: center;
+  height: auto;
+  padding: 200px 0;
 }
 .main_room {
   width: 1720px;
-  height: 100%;
+  height: auto;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
 }
-.main_room li {
+.main_room_li {
+  position: relative;
+  width: 269px;
   height: 620px;
   margin: 0 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
 }
-.main_room li:nth-child(1) {
-  width: 15.5%;
+.main_room_li p {
+  font-size: 2.2rem;
+  letter-spacing: -0.55px;
+}
+.main_room_li h3 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+.main_room_li h4 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: -0.65px;
+}
+.main_room_li:nth-child(1) {
   background-image: url(../img/mh_img01_bg.jpg);
 }
-.main_room li:nth-child(2) {
-  width: 15.5%;
+.main_room_li:nth-child(2) {
   background-image: url(../img/mh_img02_bg.jpg);
 }
-.main_room li:nth-child(3) {
-  width: 51%;
+.main_room_li:nth-child(3) {
+  position: relative;
+  width: 840px;
   background-image: url(../img/mh_img03.jpg);
 }
-.main_room li:nth-child(4) {
-  width: 15.5%;
+.main_room_li:nth-child(4) {
   background-image: url(../img/mh_img04_bg.jpg);
+}
+.main_room_more {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  letter-spacing: -0.4px;
+  color: white;
+}
+.main_room_li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* -Main Insta- */
+
+.main_insta_wrap {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  background-color: rgb(245, 245, 245);
+}
+.main_insta {
+  width: 1720px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_insta_li {
+  position: relative;
+  width: 410px;
+  height: 410px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main_insta_li:nth-child(2) {
+  background-image: url(../img/138316065_243118257250837_6744879438848618609_n.jpg);
+}
+.main_insta_li:nth-child(3) {
+  background-image: url(../img/136458730_495906511393408_5332860252362436134_n.jpg);
+}
+.main_insta_li:nth-child(4) {
+  background-image: url(../img/135104635_1020340245117113_8548644064626972889_n.jpg);
+}
+.main_insta_li:nth-child(5) {
+  background-image: url(../img/133832074_690723011619681_8426627785664852985_n.jpg);
+}
+.main_insta_li:nth-child(6) {
+  background-image: url(../img/133758315_739032170075306_8375994924420517090_n.jpg);
+}
+.main_insta_li:nth-child(7) {
+  background-image: url(../img/132959937_1290499964659911_664708517359452931_n.jpg);
+}
+.main_insta_li:nth-child(8) {
+  background-image: url(../img/131990846_191566195947105_2089723583636929327_n.jpg);
+}
+.main_insta li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*<li>에 각각 <a>를 넣어서 이미지 어디에서나(width:100%; height:100%;) 
+클릭시 링크 연결되도록 함*/
