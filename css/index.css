@@ -155,6 +155,9 @@ dl {
 .fs_26 {
   font-size: 2.6rem;
 }
+.fs_34 {
+  font-size:3.4rem
+}
 .fs_50 {
   font-size: 5rem;
 }
@@ -163,6 +166,9 @@ dl {
 }
 .fw_400 {
   font-weight: 400;
+}
+.fw_600 {
+  font-weight: 00;
 }
 
 .c_point {
@@ -309,6 +315,140 @@ dl {
   width: 60%;
 }
 
+/* -Main People- */
+
+.main_people_wrap {
+  width: 100%;
+  height: auto;
+  padding: 200px 0 0 0;
+}
+
+.main_people {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1700px;
+  height: auto;
+  position: relative;
+}
+
+.main_people_title {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main_people_info_1 {
+  display: flex;
+  width: 840px;
+  height: 597px;
+  margin: -50px 20px 0 0;
+  
+}
+
+.main_people_text_1 {
+  width: 425;
+  height: 290;
+  padding: 66px 0 0 66px;
+  margin: 310px 0 0 -45px;
+  background-color: white;
+}
+
+.main_people_info_2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 840px;
+  height: 607px;
+  margin: 141px 0 0 0;
+}
+
+.main_people_text_2 {
+  position: relative;
+  width: 481px;
+  height: 356px;
+  padding: 66px 66px 0 66px;
+  margin: 251px -90px 0 0;
+  background-color: white;
+  text-align: right;
+  
+}
+
+.main_people_info_3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 840px;
+  height: 507px;
+}
+
+.main_people_text_3 {
+  position: relative;
+  width: 561px;
+  height: 356px;
+  padding: 66px 66px 66px 0;
+  margin: 151px -110px 0 0;
+  background-color: white;
+  text-align: right;
+}
+
+.main_people_career {
+  margin: 25px 0 0 0;
+}
+
+.main_people_career li {
+  font-family: "Montserrat", "Noto Sans KR";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: 0.4px;
+  margin: 5px 0 0 0;
+  position: relative;
+  padding: 0 0 0 16px;
+  white-space: nowrap;
+}
+
+.main_people_career li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #c27a34;
+  top: 35%;
+  left: 0;
+}
+
+.dot_right_1 li {
+  padding: 0 16px 0 0;
+}
+
+.dot_right_2 li {
+  padding: 0 16px 0 0;
+}
+.dot_right_1 li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #c27a34;
+  top: 35%;
+  left: 335px;
+}
+
+.dot_right_2 li:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #c27a34;
+  top: 35%;
+  left: 479px;
+}
+
+
 /* -Main Room- */
 
 .main_room_wrap {
@@ -433,3 +573,20 @@ dl {
 }
 /*<li>에 각각 <a>를 넣어서 이미지 어디에서나(width:100%; height:100%;) 
 클릭시 링크 연결되도록 함*/
+
+/* Main-People */
+
+.main_people_wrap {
+  width: 100%;
+  height: auto;
+  padding: 180px 0 0 ;
+}
+.main_people {
+ 
+  width: 1700px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
