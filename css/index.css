@@ -335,6 +335,11 @@ dl {
   position: absolute;
   top: 0;
   right: 0;
+  text-align: right;
+}
+
+.main_people_title h2 {
+  line-height: 72px;
 }
 
 .main_people_info_1 {
@@ -584,8 +589,64 @@ dl {
 .main_people {
  
   width: 1700px;
+  height: 164px;
+  margin: 0 auto;
+}
+
+/* -Main People- */
+
+.footer_wrap {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  background-color: rgb(56, 52, 49);
+}
+
+.footer {
+  width: 1700px;
   height: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_info p:nth-child(1) {
+  color: rgb(206, 192, 181);
+}
+
+.footer_info p:nth-child(2) {
+  color: rgb(170, 152, 138);
+}
+
+.footer_info p:nth-child(3) {
+  color: rgb(120, 102, 89);
+}
+
+.footer_right_menu {
+  width: 364px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_right_menu .footer_right_insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(85, 81, 77);
+  border-radius: 50%;
+}
+
+.footer_right_menu .footer_right_btn {
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(194, 122, 52);
 }
 
 
