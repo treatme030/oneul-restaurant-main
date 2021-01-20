@@ -80,58 +80,19 @@ ol,
 dl {
   list-style: none;
 }
-/* Header */
 
-.gnb_wrap {
-  position: fixed;
-  width: 100%;
-  height: 130px;
-  background-color: rgb(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2.5%;
-  align-items: center;
-  z-index: 10000;
+.width_40p {
+  width: 40%;
 }
-/*  가장 위에 떠 있도록 하여 항상 보이게 하기 위해서는 z-index 값을 설정해 줌  */
-
-.gnb_menu_a {
-  padding: 0 43px;
-  height: 100%;
-  font-family: "Montserrat";
-  font-size: 2.2rem;
-  letter-spacing: -0.55px;
-  color: black;
-  line-height: 1;
-  font-weight: 400;
-}
-
-.gnb_logo_img {
-  width: 127.5px;
-}
-.gnb_hiddenmenu {
-  width: 127.5px;
-  text-align: right;
-}
-
-/* Hero */
-
-.hero_wrap {
-  position: relative;
-  width: 100%;
-  height: 960px;
-  background-image: url(../img/visual01.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero_title {
-  text-align: center;
-  color: white;
+.width_60p {
+  width: 60%;
 }
 
 .margin_b_10 {
   margin: 0 0 10px;
+}
+.margin_b_15 {
+  margin: 0 0 15px;
 }
 .margin_b_20 {
   margin: 0 0 20px;
@@ -139,7 +100,13 @@ dl {
 .margin_b_50 {
   margin: 0 0 50px;
 }
+.pa_r_10 {
+  padding: 0 10px 0 0;
+}
 
+.ff_montaga {
+  font-family: "Montaga";
+}
 .fs_16 {
   font-size: 1.6rem;
 }
@@ -179,6 +146,58 @@ dl {
   text-align: center;
 }
 
+/* Header */
+
+.gnb_wrap {
+  position: fixed;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5%;
+  align-items: center;
+  z-index: 10000;
+}
+/*  가장 위에 떠 있도록 하여 항상 보이게 하기 위해서는 z-index 값을 설정해 줌  */
+
+.gnb_menu_a {
+  padding: 0 43px;
+  height: 100%;
+  font-family: "Montserrat";
+  font-size: 2.2rem;
+  letter-spacing: -0.55px;
+  color: black;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.gnb_logo_img {
+  width: 127.5px;
+}
+
+.gnb_hiddenmenu {
+  width: 127.5px;
+  text-align: right;
+}
+
+/* Hero */
+
+.hero_wrap {
+  position: relative;
+  width: 100%;
+  height: 960px;
+  background-image: url(../img/visual01.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_title {
+  text-align: center;
+  color: white;
+}
+
 .hero_reservation {
   position: absolute;
   top: 180px;
@@ -190,10 +209,12 @@ dl {
   align-items: center;
   border: 1px solid white;
 }
+
 .hero_reservation_img {
   width: 24px;
   margin: 0 20px 0 0;
 }
+
 .hero_reservation_a {
   color: white;
 }
@@ -207,16 +228,19 @@ dl {
   display: flex;
   justify-content: center;
 } /*flex로 .main_info 중앙위치 또는 margin: 0 auto;*/
+
 .main_info {
   width: 1700px;
   height: 500px;
   display: flex;
 } /*text와 img 가로 정렬*/
+
 .main_info_text {
   width: 50%;
   height: 100%;
   padding: 100px 0 0 10%;
 }
+
 .main_info_img {
   width: 50%;
   height: 100%;
@@ -232,14 +256,17 @@ dl {
   display: flex;
   justify-content: center;
 }
+
 .main_menu {
   width: 1720px;
   height: auto;
 }
+
 .main_menu_ul {
   width: 100%;
   display: flex;
 }
+
 .main_menu_li {
   width: 410px;
   height: 500px;
@@ -255,16 +282,20 @@ dl {
   margin: 68px 10px 30px;
   background-image: url(../img/mn_img01.jpg);
 }
+
 .main_menu_ul li:nth-child(2) {
   background-image: url(../img/mn_img02.jpg);
 }
+
 .main_menu_ul li:nth-child(3) {
   margin: 68px 10px 30px;
   background-image: url(../img/mn_img03.jpg);
 }
+
 .main_menu_ul li:nth-child(4) {
   background-image: url(../img/mn_img04.jpg);
 }
+
 .main_menu_li_title {
   border-bottom: 1px solid rgba(255, 255, 255, 1);
   padding: 0 0 20px;
@@ -273,11 +304,13 @@ dl {
   align-items: center;
   margin: 0 10px;
 }
+
 .main_menu_li_menu {
   border-top: 1px solid rgba(255, 255, 255, 1);
   padding: 20px 0 0;
   display: flex;
 }
+
 .main_menu_li_menu_1,
 .main_menu_li_menu_2 {
   width: 50%;
@@ -308,12 +341,7 @@ dl {
   padding: 0 0 5px 0;
 }
 
-.width_40p {
-  width: 40%;
-}
-.width_60p {
-  width: 60%;
-}
+
 
 /* -Main People- */
 
@@ -579,6 +607,101 @@ dl {
 }
 /*<li>에 각각 <a>를 넣어서 이미지 어디에서나(width:100%; height:100%;) 
 클릭시 링크 연결되도록 함*/
+
+/* -Main Info2- */
+
+.main_info2_wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 140px 0;
+  background-image: url("../img/KakaoMap_20210120_091504.png");
+}
+
+.main_info2_map_pin {
+  position: absolute;
+  top: 275px;
+  left: 456px;
+}
+
+.main_info2_map_pin img {
+  width: 100px;
+}
+
+.main_info2 {
+  width: 1700px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.main_info2_reserve_wrap {
+  width: 850px;
+  height: 513px;
+  display: flex;
+}
+
+.main_info2_left {
+  width: 255px;
+  background-image: url("../img/mi_bg.jpg");
+  background-size: auto 100%;
+}
+
+.main_info2_icon {
+  width: 117px;
+  height: 117px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(194, 122, 52);
+}
+
+.main_info2_icon img {
+  padding: 10px;
+}
+
+.main_info2_right {
+  width: 595px;
+  padding: 60px 60px 20px 60px;
+  background-color: white;
+}
+
+.main_info2_right > div {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(204, 204, 204);
+  padding: 20px 0;
+}
+
+.main_info2_right > div img {
+  padding: 0 30px 0 0;
+}
+
+.main_info2_right h2 {
+  font-size: 3.4rem;
+  line-height: 51px;
+  letter-spacing: -0.85px;
+}
+
+.main_info2_tel {
+  height: 92px;
+}
+
+.main_info2_time {
+  height: 119px;
+}
+
+
+
+
+
+
+
+
 
 /* -Main Footer- */
 
